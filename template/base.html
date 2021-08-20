@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System || Sarosh Farooq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <style>
+        html {
+            font-family: 'Open Sans', sans-serif;
+        }
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        /* header  */
+        header {
+            z-index: 1;
+            background-color: #0d67d7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            padding: 0px 15px;
+            position: sticky;
+            top: 0px;
+        }
+        header h1 {
+            color: white;
+            font-size: 27px;
+            padding: 10px 0 10px 10px;
+            cursor: pointer;
+        
+        }
+        @media screen and (max-width: 500px) {
+            h4{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="head">
+        <h1 onclick="window.location.href='/';">Banking System</h1>
+        <h4>Developed By : Sarosh Farooq</h4>
+    </header>
+    {% block content %} {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* header  */
+header {
+    z-index: 1;
+    background-color: #0d67d7;
+}
+
+header h1 {
+    color: white;
+    font-size: 27px;
+    padding: 10px 0 10px 10px;
+
+}
+
+
+
+/* customer list  */
+
+
+.container {
+    margin-top: 10px;
+    border: 5px solid white;
+    padding: 20px 30px;
+    border-radius: 7px;
+}
+
+.cont_2 {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+}
+
+
+
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    font-size: 18px;
+    border-collapse: collapse;
+    margin: 10px 0px;
+
+}
+
+table,
+th,
+td {
+
+    border: 1px solid black;
+}
+
+table th {
+
+    background-color: #0d67d7;
+    color: white;
+}
+
+table th,
+table td {
+    padding: 8px 10px;
+
+    /* border-collapse: collapse; */
+}
+
+table tbody tr {
+    transition: 0.5s ease-in;
+}
+
+table tbody tr:hover {
+    background-color: #0d67d7;
+    color: white;
+    cursor: pointer;
+}
+
+.cust_detail {
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 500px) {
+    table {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 14px auto;
+        padding: 11px 18px;
+    }
+}
+
+.cross_button img {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 22px;
+    padding: 10px;
+    clip-path: circle(50% at 50% 50%);
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    padding-top: 50px;
+}
+
+/* customer list  */
+
+
+p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+button {
+    background: transparent;
+    font-size: 17px;
+    /* color: white; */
+    padding: 10px 18px;
+    display: block;
+    border-radius: 4px;
+    margin: 20px 9px;
+    border: 2px solid #0d67d7;
+    transition: 0.7s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d67d7;
+    color: white;
+}
+
+b {
+    color: #0d67d7;
+}
+
+.con {
+    margin: 10px 0px;
+}
+
+.conn {
+    margin: 15px 15px;
+}
+
+select {
+    width: 270px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px 10px;
+    padding: 6px 10px;
+
+}
+
+input {
+    width: 240px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 6px 10px;
+    padding: 6px 13px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    z-index: 2;
+    animation: slide-bottom .5s ease-in;
+    padding: 20px;
+    display: none;
+}
+
+@keyframes slide-bottom {
+    0% {
+        top: 40%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+
+/* popup 1  */
+
+.cross_button img {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 22px;
+    padding: 10px;
+    clip-path: circle(50% at 50% 50%);
+    cursor: pointer;
+}
+
+.cross_button i:hover {
+    background-color: rgba(245, 245, 245, 0.651);
+}
+
+
+.popup button {
+    margin: 10px 9px;
+    padding: 8px 10px;
+}
+
+
+
+@media screen and (max-width:500px) {
+    p {
+        margin: 6px;
+        font-size: 15px;
+    }
+
+    button {
+        background: transparent;
+        font-size: 14px;
+        /* color: white; */
+        padding: 7px 7px;
+        display: block;
+        border-radius: 4px;
+        margin: 12px 9px;
+    }
+
+    select {
+        width: 190px;
+        font-size: 14px;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 6px 5px;
+        padding: 4px 6px;
+    }
+
+    .popup {
+        padding: 10px;
+    }
+
+    .container {
+
+        padding: 20px 13px;
+    }
+
+    h2 {
+        font-size: 17px
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+button {
+    display: inline-block;
+}
+
+.cross_button img {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 22px;
+    padding: 10px;
+    clip-path: circle(50% at 50% 50%);
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    padding-top: 50px;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+.cross_button1 img {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 22px;
+    padding: 10px;
+    clip-path: circle(50% at 50% 50%);
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    padding-top: 50px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.27);
+}
+
+.popup button {
+    display: block;
+    margin: 10px auto;
+}
